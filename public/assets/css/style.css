@@ -1506,7 +1506,7 @@ li.nav-item a.nav-link i {
 }
 
 .single-slide-item {
-  background-image: url(../img/slider/slide-1.jpg);
+  /*background-image: url(../img/slider/slide-1.jpg);*/
   background-size: cover;
   background-position: center;
   background-color: #ddd;

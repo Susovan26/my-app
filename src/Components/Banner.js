@@ -5,13 +5,16 @@ function Banner() {
     // Banner slider initialization for Owl Carousel
     if (typeof window !== 'undefined' && window.$ && window.$.fn.owlCarousel) {
       window.$('.homepage-slides').owlCarousel({
-        items: 1,
+         items: 1,
         loop: true,
         nav: true,
         dots: true,
         autoplay: true,
         autoplayTimeout: 5000,
-        smartSpeed: 1000,
+        smartSpeed: 700, // স্পিড কমিয়ে 700 করুন
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        rtl: false, // বাম থেকে ডানে
         navText: [
           '<i class="las la-angle-left"></i>',
           '<i class="las la-angle-right"></i>'
@@ -20,23 +23,28 @@ function Banner() {
     }
 
     // WOW.js initialization
-    if (typeof window !== 'undefined' && window.WOW) {
-      new window.WOW().init();
-    }
+    // if (typeof window !== 'undefined' && window.WOW) {
+    //   new window.WOW().init();
+    // }
 
-    // Cleanup function
-    return () => {
-      if (typeof window !== 'undefined' && window.$ && window.$.fn.owlCarousel) {
-        window.$('.homepage-slides').trigger('destroy.owl.carousel');
-      }
-    };
+    // // Cleanup function
+    // return () => {
+    //   if (typeof window !== 'undefined' && window.$ && window.$.fn.owlCarousel) {
+    //     window.$('.homepage-slides').trigger('destroy.owl.carousel');
+    //   }
+    // };
   }, []);
 
   return (
     <>
       <div className="homepage-slides owl-carousel">
         {/* First Slide */}
-        <div className="single-slide-item hero-area-bg-1">
+       <div 
+  className="single-slide-item"
+  style={{ 
+    backgroundImage: "url('assets/img/slider/slide-1.jpg')" 
+  }}
+>
           <div className="overlay-1"></div>
           <div className="container">
             <div className="row align-items-center">
@@ -75,7 +83,12 @@ function Banner() {
         </div>
 
         {/* Second Slide */}
-        <div className="single-slide-item hero-area-bg-2">
+   <div 
+  className="single-slide-item"
+  style={{ 
+    backgroundImage: "url('assets/img/slider/slide-2.jpg')" 
+  }}
+>
           <div className="overlay-1"></div>
           <div className="container">
             <div className="row align-items-center">
