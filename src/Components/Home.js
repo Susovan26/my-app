@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
-import About from "./About";
+import Homeabout from "./Homeabout";
 import Service from "./Service";
 import Customers from "./Customers";
 import Quote from "./Quote";
@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
     <Banner/>
-     <About/>
+     <Homeabout/>
       <Service/>
          <Customers/>
          <Quote/>
