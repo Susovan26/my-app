@@ -30,7 +30,6 @@ function App() {
 
     loadScripts();
   }, []);
-
 return (
     <Router>
       <NavBar/>
