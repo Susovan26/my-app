@@ -86,10 +86,10 @@ export default function NavBar() {
                                         <div className={`collapse navbar-collapse justify-content-center ${isMobileMenuOpen ? 'show' : ''}`}>
                                             <ul className="navbar-nav m-auto">
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#/">Home</a>
+                                                    <a className="nav-link" href="/">Home</a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#/about">About Us</a>
+                                                    <a className="nav-link" href="/about">About Us</a>
                                                 </li>
                                                 
                                                 {/* Solution Dropdown */}
@@ -108,31 +108,31 @@ export default function NavBar() {
                                                         <li className="dropdown-submenu">
                                                             <a href="#" className="dropbtn">First Mile Delivery</a>
                                                             <ul className="dropdown-content">
-                                                                <li><a href="$/personal-courier">Personal Courier</a></li>
-                                                                <li><a href="#/business-courier">Business Courier</a></li>
-                                                                <li><a href="#/large-heavy-courier">Large & Heavy Courier</a></li>
-                                                                <li><a href="#/single-package">Single Package</a></li>
-                                                                <li><a href="#/multi-package">Multi Package</a></li>
-                                                                <li><a href="#/part-truck-load">Part Truck Load</a></li>
-                                                                <li><a href="#/full-truck-load">Full Truck Load</a></li>
-                                                                <li><a href="#/house-hold">House Hold</a></li>
+                                                                <li><a href="/personal-courier">Personal Courier</a></li>
+                                                                <li><a href="/business-courier">Business Courier</a></li>
+                                                                <li><a href="/large-heavy-courier">Large & Heavy Courier</a></li>
+                                                                <li><a href="/single-package">Single Package</a></li>
+                                                                <li><a href="/multi-package">Multi Package</a></li>
+                                                                <li><a href="/part-truck-load">Part Truck Load</a></li>
+                                                                <li><a href="/full-truck-load">Full Truck Load</a></li>
+                                                                <li><a href="/house-hold">House Hold</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a href="#/last-mile-delivery">Last Mile Delivery</a></li>
+                                                        <li><a href="/last-mile-delivery">Last Mile Delivery</a></li>
                                                     </ul>
                                                 </li>
 
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#/rate-calculator">Rate Calculator</a>
+                                                    <a className="nav-link" href="/rate-calculator">Rate Calculator</a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#/track">Track</a>
+                                                    <a className="nav-link" href="/track">Track</a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#/media">Media</a>
+                                                    <a className="nav-link" href="/media">Media</a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#/careers">Careers</a>
+                                                    <a className="nav-link" href="/careers">Careers</a>
                                                 </li>
 
                                                 {/* Ship Now Dropdown */}
@@ -148,13 +148,13 @@ export default function NavBar() {
                                                         Ship Now <i className="las la-plus"></i>
                                                     </a>
                                                     <ul className={`sub-menu ${openDropdown === 2 ? 'show' : ''}`}>
-                                                        <li><a href="#/private">Private Person</a></li>
-                                                        <li><a href="#/business">Business</a></li>
+                                                        <li><a href="/private">Private Person</a></li>
+                                                        <li><a href="/business">Business</a></li>
                                                     </ul>
                                                 </li>
 
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#/contact">Contact Us</a>
+                                                    <a className="nav-link" href="/contact">Contact Us</a>
                                                 </li>
 
                                                 {/* Login Dropdown */}
@@ -170,9 +170,9 @@ export default function NavBar() {
                                                         Login <i className="las la-plus"></i>
                                                     </a>
                                                     <ul className={`sub-menu ${openDropdown === 3 ? 'show' : ''}`}>
-                                                        <li><a href="#/personal-login">Personal</a></li>
-                                                        <li><a href="#/business-login">Business</a></li>
-                                                        <li><a href="#/franchise-login">Franchise</a></li>
+                                                        <li><a href="/personal-login">Personal</a></li>
+                                                        <li><a href="/business-login">Business</a></li>
+                                                        <li><a href="/franchise-login">Franchise</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
