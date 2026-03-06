@@ -6453,23 +6453,30 @@ button[type=submit] {
     width: auto;
 }
 
-/* Navbar Toggler */
-.navbar-toggler {
-    border: none;
-    padding: 0;
-    width: 30px;
-    height: 20px;
-    position: relative;
+.sub-menu{
+display:none;
 }
 
-.navbar-toggler:focus {
-    box-shadow: none;
+.sub-menu.show{
+display:block;
 }
 
-.navbar-toggler-icon {
-    width: 100%;
-    height: 2px;
-    background: #333;
-    display: block;
-    margin: 4px 0;
+.dropdown-content{
+display:none;
+background:#fff;
+}
+
+.dropdown-content.show{
+display:block;
+}
+
+.dropdown-submenu a{
+display:block;
+padding:12px 15px;
+border-bottom:1px solid #eee;
+}
+
+.dropdown-content li a{
+padding-left:30px;
+font-size:14px;
 }
