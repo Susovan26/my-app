@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Parsonalcourier() {
+function Singlepakage() {
     return (
         <>
             {/* About Section */}
@@ -11,7 +11,7 @@ function Parsonalcourier() {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="breadcrumb-title">
-                                <h1>Personal Courier</h1>
+                                <h1>Single Pakage</h1>
                             </div>
                         </div>
                     </div>
@@ -233,4 +233,4 @@ function Parsonalcourier() {
     );
 }
 
-export default Parsonalcourier;
+export default Singlepakage;

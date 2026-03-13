@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Parsonalcourier() {
+function Lastmiledelivery() {
     return (
         <>
             {/* About Section */}
@@ -11,7 +11,7 @@ function Parsonalcourier() {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="breadcrumb-title">
-                                <h1>Personal Courier</h1>
+                                <h1>Last Mile Delhivery</h1>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ function Parsonalcourier() {
                                             <Link to="/large-heavy-courier">Large & Heavy Courier<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
                                         </li>
                                         <li className="d-block">
-                                            <Link to="/single-pakage">Single Package<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
+                                           <Link to="/single-pakage">Single Package<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
                                         </li>
                                         <li className="d-block">
                                             <Link to="/multi-pakage">Multi Package<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
@@ -233,4 +233,4 @@ function Parsonalcourier() {
     );
 }
 
-export default Parsonalcourier;
+export default Lastmiledelivery;

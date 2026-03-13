@@ -63,10 +63,10 @@ function Businesscourier() {
                                             <Link to="/large-heavy-courier">Large & Heavy Courier<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
                                         </li>
                                         <li className="d-block">
-                                            <Link to="/single-package">Single Package<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
+                                            <Link to="/single-pakage">Single Package<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
                                         </li>
                                         <li className="d-block">
-                                            <Link to="/multi-package">Multi Package<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
+                                            <Link to="/multi-pakage">Multi Package<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
                                         </li>
                                         <li className="d-block">
                                             <Link to="/part-truck-load">Part Truck Load<span> <i className="las la-long-arrow-alt-right"></i></span></Link>
