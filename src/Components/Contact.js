@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -38,6 +39,12 @@ const handleSubmit = async (e) => {
 
         
 };
+=======
+import React from "react";
+import { Link } from "react-router-dom";
+
+function Contact() {
+>>>>>>> 121ffffe762644bc48958f7c0098b257379ac59f
     return (
         <>
             {/* About Section */}
@@ -89,6 +96,7 @@ const handleSubmit = async (e) => {
                         <p>Let's Get In Touch</p>
                         <h2>Send Us a Message</h2>
                     </div>
+<<<<<<< HEAD
                     {/* <p>Pleas put up a topic below reated to your inquiry. If you dont find what you need fill out our contract form. For all enquiries please mail us using the below</p> */}
                 {msg && <p style={{ color: "green" }}>{msg}</p>}
                     <div className="contact_form">
@@ -97,25 +105,48 @@ const handleSubmit = async (e) => {
                                 <div className="col-xl-12">
                                     <div>
                                         <input type="text"  name="name"placeholder="Your Name"value={form.name} onChange={handleChange}/>
+=======
+                    <p>Pleas put up a topic below reated to your inquiry. If you dont find what you need fill out our contract form. For all enquiries please mail us using the below</p>
+                    <div className="contact_form">
+                        <form action="https://capricorn-theme.com/html/xperia/assets/inc/sendemail.php" className="comment-one_form contact-form-validated" novalidate="novalidate">
+                            <div className="row">
+                                <div className="col-xl-12">
+                                    <div>
+                                        <input type="text" placeholder="Your Name" name="name"/>
+>>>>>>> 121ffffe762644bc48958f7c0098b257379ac59f
                                     </div>
                                 </div>
                                 <div className="col-xl-6">
                                     <div>
+<<<<<<< HEAD
                                         <input type="email" placeholder="Email Address" name="email" value={form.email} onChange={handleChange}/>
+=======
+                                        <input type="email" placeholder="Email Address" name="email"/>
+>>>>>>> 121ffffe762644bc48958f7c0098b257379ac59f
                                     </div>
                                 </div>
                                 <div className="col-xl-6">
                                     <div>
+<<<<<<< HEAD
                                         <input type="text" placeholder="Phone Number" name="phone" value={form.phone} onChange={handleChange}/>
+=======
+                                        <input type="text" placeholder="Phone Number" name="phone"/>
+>>>>>>> 121ffffe762644bc48958f7c0098b257379ac59f
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-xl-12">
                                     <div>
+<<<<<<< HEAD
                                         <textarea name="message" placeholder="Write a Message" value={form.message} onChange={handleChange}></textarea>
                                     </div>
                                     <button className="main-btn primary" type="submit">Send Message<i className="las la-arrow-right"></i></button>
+=======
+                                        <textarea name="message" placeholder="Write a Message"></textarea>
+                                    </div>
+                                    <a href="#" className="main-btn primary">Send Message<i className="las la-arrow-right"></i></a>
+>>>>>>> 121ffffe762644bc48958f7c0098b257379ac59f
                                 </div>
                             </div>
                         </form>
