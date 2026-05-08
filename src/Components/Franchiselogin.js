@@ -161,6 +161,35 @@ Register
                                                         <div className="row">
 
                                                             <div className="col-12">
+                                                                <label>Name</label>
+                                                                <input
+                                                                    type="email"
+                                                                    className="form-control"
+                                                                    placeholder="Enter Name"
+                                                                    required
+                                                                />
+                                                            </div>
+
+                                                            <div className="col-12">
+                                                                <label>Phone No</label>
+                                                                <input
+                                                                    type="text"
+                                                                    className="form-control"
+                                                                    placeholder="Enter Phone No"
+                                                                    required
+                                                                />
+                                                            </div>
+
+                                                            <div className="col-12">
+                                                                <label>Alternative Phone No</label>
+                                                                <input
+                                                                    type="text"
+                                                                    className="form-control"
+                                                                    placeholder="Enter Alternative Phone No"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div className="col-12">
                                                                 <label>Email</label>
                                                                 <input
                                                                     type="email"
@@ -169,27 +198,42 @@ Register
                                                                     required
                                                                 />
                                                             </div>
-
-                                                            <div className="col-12">
-                                                                <label>Password</label>
+                                                                <div className="col-12">
+                                                                <label>Address</label>
                                                                 <input
-                                                                    type="password"
+                                                                    type="text"
                                                                     className="form-control"
-                                                                    placeholder="Enter Password"
+                                                                    placeholder="Enter Address"
                                                                     required
                                                                 />
                                                             </div>
-
                                                             <div className="col-12">
-                                                                <label>Confirm Password</label>
+                                                                <label>Pin Code</label>
                                                                 <input
-                                                                    type="password"
+                                                                    type="text"
                                                                     className="form-control"
-                                                                    placeholder="Confirm Password"
+                                                                    placeholder="Enter Pin Code"
                                                                     required
                                                                 />
                                                             </div>
-
+                                                            <div className="col-12">
+                                                                <label>District</label>
+                                                                <input
+                                                                    type="text"
+                                                                    className="form-control"
+                                                                    placeholder="Enter District"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div className="col-12">
+                                                                <label>State</label>
+                                                                <input
+                                                                    type="text"
+                                                                    className="form-control"
+                                                                    placeholder="Enter State"
+                                                                    required
+                                                                />
+                                                            </div>
                                                             <div className="col-12">
                                                                 <button className="main-btn primary">
                                                                     Register
