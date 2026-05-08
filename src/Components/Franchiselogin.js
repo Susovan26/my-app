@@ -163,7 +163,7 @@ Register
                                                             <div className="col-12">
                                                                 <label>Name</label>
                                                                 <input
-                                                                    type="email"
+                                                                    type="text"
                                                                     className="form-control"
                                                                     placeholder="Enter Name"
                                                                     required
