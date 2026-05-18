@@ -76,6 +76,28 @@ p {
   position: relative;
   color: #2c2b2b;
 }
+.single-logistics-box {
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.single-logistics-box:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+}
+
+.why-list {
+  list-style: none;
+  padding: 0;
+}
+
+.why-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1200px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   p {
     font-size: 15px;
@@ -6434,7 +6456,7 @@ button[type=submit] {
 
 .contact-info span {
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .social-area a {

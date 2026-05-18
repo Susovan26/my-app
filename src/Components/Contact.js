@@ -12,15 +12,18 @@ const [msg, setMsg] = useState(""); // 👈 এইটা add করুন
 const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
 };
+
 const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("https://api.susovanenterprise.com/contact", {
+
+    const res = await fetch("api.susovanenterprise.com/contact", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(form)
     });
+
     const data = await res.text();
     setMsg(data); // 👈 backend message show
 
@@ -62,20 +65,26 @@ const handleSubmit = async (e) => {
                             </div>
                             <div className="contact-meta-info">
                                 <div className="contact-single-info">
-                                    <i className="las la-map-marker-alt"></i>
-                                    <h6>Address</h6>
-                                    <p>248, Park Street Avenue, NY, USA </p>
-                                </div>
+    <i className="las la-map-marker-alt"></i>
+    <h6>Address</h6>
+    <p>
+        Susovan Enterprise<br />
+        448/414 Raghunathpur<br />
+        Near Balaka Ranghamancha<br />
+        Jhargram, West Bengal – 721507<br />
+        India
+    </p>
+</div>
                                 <div className="contact-single-info">
                                     <i className="las la-phone"></i>
                                     <h6>Phone</h6>
-                                    <p>+14-127893 </p>
-                                    <p>+12-356786</p>
+                                    <p>Phone / WhatsApp: +91 9339649513 </p>
+                                    
                                 </div>
                                 <div className="contact-single-info">
                                     <i className="las la-envelope"></i>
                                     <h6>Mail</h6>
-                                    <p>support@experia.com </p>
+                                    <p> contact@susovanenterprise.com </p>
                                 </div>
                             </div>
                         </div>

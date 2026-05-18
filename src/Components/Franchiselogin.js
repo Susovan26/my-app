@@ -2,13 +2,64 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Franchiselogin() {
-
     const [activeTab, setActiveTab] = useState("login");
-
     const loginRef = useRef(null);
     const registerRef = useRef(null);
     const wrapperRef = useRef(null);
+const [form, setForm] = useState({
+    owner_name: "",
+    mobile: "",
+    alternate_mobile: "",
+    email: "",
+    address: "",
+    state: "",
+    district: "",
+    pin_code: ""
+});
 
+const [msg, setMsg] = useState("");
+
+const handleChange = (e) => {
+
+    setForm({
+        ...form,
+        [e.target.name]: e.target.value
+    });
+
+};
+
+const handleSubmit = async (e) => {
+
+    e.preventDefault();
+
+    //const res = await fetch("http://localhost:5000/franchiseregister",
+    const res = await fetch("api.susovanenterprise.com/franchiseregister",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(form)
+        }
+    );
+
+    const data = await res.text();
+
+    setMsg(data);
+
+    // FORM RESET
+    setForm({
+        owner_name: "",
+        mobile: "",
+        alternate_mobile: "",
+        email: "",
+        address: "",
+        state: "",
+        district: "",
+        pin_code: ""
+    });
+
+};
     useEffect(() => {
         if (activeTab === "login" && loginRef.current) {
             wrapperRef.current.style.height = `${loginRef.current.offsetHeight}px`;
@@ -155,51 +206,139 @@ Register
                                                     className={`space-y-4 p-10 quotationinner ${activeTab !== "register" ? "hidden" : ""
                                                         }`}
                                                 >
+  {msg && <p style={{ color: "green" }}>{msg}</p>}
+                                                   <form onSubmit={handleSubmit} className="contactForm">
 
-                                                    <form className="contactForm">
+    <div className="row">
 
-                                                        <div className="row">
+        <div className="col-12">
+            <label>Owner Name</label>
 
-                                                            <div className="col-12">
-                                                                <label>Email</label>
-                                                                <input
-                                                                    type="email"
-                                                                    className="form-control"
-                                                                    placeholder="Enter Email"
-                                                                    required
-                                                                />
-                                                            </div>
+            <input
+                type="text"
+                name="owner_name"
+                className="form-control"
+                placeholder="Enter Owner Name"
+                value={form.owner_name}
+                onChange={handleChange}
+                required
+            />
+        </div>
 
-                                                            <div className="col-12">
-                                                                <label>Password</label>
-                                                                <input
-                                                                    type="password"
-                                                                    className="form-control"
-                                                                    placeholder="Enter Password"
-                                                                    required
-                                                                />
-                                                            </div>
+        <div className="col-12">
+            <label>Mobile</label>
 
-                                                            <div className="col-12">
-                                                                <label>Confirm Password</label>
-                                                                <input
-                                                                    type="password"
-                                                                    className="form-control"
-                                                                    placeholder="Confirm Password"
-                                                                    required
-                                                                />
-                                                            </div>
+            <input
+                type="text"
+                name="mobile"
+                className="form-control"
+                placeholder="Enter Mobile Number"
+                value={form.mobile}
+                onChange={handleChange}
+                required
+            />
+        </div>
 
-                                                            <div className="col-12">
-                                                                <button className="main-btn primary">
-                                                                    Register
-                                                                </button>
-                                                            </div>
+        <div className="col-12">
+            <label>Alternative Mobile</label>
 
-                                                        </div>
+            <input
+                type="text"
+                name="alternate_mobile"
+                className="form-control"
+                placeholder="Enter Alternative Mobile Number"
+                value={form.alternate_mobile}
+                onChange={handleChange}
+            />
+        </div>
 
-                                                    </form>
+        <div className="col-12">
+            <label>Email</label>
 
+            <input
+                type="email"
+                name="email"
+                className="form-control"
+                placeholder="Enter Email"
+                value={form.email}
+                onChange={handleChange}
+                required
+            />
+        </div>
+
+        <div className="col-12">
+            <label>Address</label>
+
+            <textarea
+                name="address"
+                className="form-control"
+                placeholder="Enter Address"
+                rows="3"
+                value={form.address}
+                onChange={handleChange}
+                required
+            ></textarea>
+        </div>
+
+        <div className="col-12">
+            <label>State</label>
+
+            <input
+                type="text"
+                name="state"
+                className="form-control"
+                placeholder="Enter State"
+                value={form.state}
+                onChange={handleChange}
+                required
+            />
+        </div>
+
+        <div className="col-12">
+            <label>District</label>
+
+            <input
+                type="text"
+                name="district"
+                className="form-control"
+                placeholder="Enter District"
+                value={form.district}
+                onChange={handleChange}
+                required
+            />
+        </div>
+
+        <div className="col-12">
+            <label>Pin Code</label>
+
+            <input
+                type="text"
+                name="pin_code"
+                className="form-control"
+                placeholder="Enter Pin Code"
+                value={form.pin_code}
+                onChange={handleChange}
+                required
+            />
+        </div>
+
+        <div className="col-12 mt-3">
+
+            <button type="submit" className="main-btn primary">
+                Register
+            </button>
+
+        </div>
+
+        <div className="col-12 mt-3">
+
+            <p>{msg}</p>
+
+        </div>
+
+    </div>
+
+</form>
                                                 </div>
 
                                             </div>

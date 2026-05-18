@@ -37,9 +37,9 @@ export default function NavBar() {
             <div className="col-xl-6 col-lg-6 col-md-12">
               <div className="contact-info">
                 <i className="las la-map-marker"></i>
-                <span>123, Brooklyn Street, New York</span>
+                <span>Jhargram, West Bengal – 721507</span>
                 <i className="las la-envelope"></i>
-                <span>info@experia.com</span>
+                <span>contact@susovanenterprise.com</span>
                 <i className="las la-clock"></i>
                 <span>08.00 AM-09.00 PM</span>
               </div>
@@ -201,7 +201,7 @@ export default function NavBar() {
                   </div>
                   <div className="phone">
                     <p>Have any questions?</p>
-                    <a href="tel:+992688272500">+99 268 827 2500</a>
+                    <a href="tel:+91 9339649513">91 9339649513</a>
                   </div>
                 </div>
               </div>

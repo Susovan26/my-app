@@ -66,9 +66,10 @@ function About() {
                 <div className="col-xl-7 col-lg-7 order-1 order-lg-2">
                     <div className="about-content-wrap">
                         <div className="section-title">
-                            <p>About Susovan Courier Service</p>
+                            <p>About SUSOVAN ENTERPRISE</p>
                             <h2>
-                                We Are Providing best way of Courier & Parcel Delivery!
+                                Courier Aggregator & Logistics Solutions
+!
                             </h2>
                         </div>
                         <div className="about-content">
@@ -76,11 +77,24 @@ function About() {
                                 <div className="col-12">
                                     <div className="about-content-right">
                                         <p>
-                                            At Susovan, we are more than just a transportation company—we are your trusted partner in navigating the complexities of logistics and supply chain management. We deliver smart, reliable, and cost-effective logistics solutions designed to keep your business moving efficiently.
+                                           Susovan Enterprise is a courier aggregator and logistics solutions provider based in Jhargram,
+West Bengal. Established on 15 November 2019, the company specializes in first-mile parcel
+pickup, multi-carrier courier booking, and last-mile delivery coordination for individuals, businesses,
+and e-commerce sellers. As a courier aggregator, Susovan Enterprise connects customers with
+multiple courier networks through a single logistics solution, enabling efficient parcel shipping
+across India.
                                         </p>
-										<p className="custom-border-left">6 years of experience in the industry, we have built a reputation for excellence, reliability, customer service.</p>
+										<p className="custom-border-left">By working with leading logistics partners such as Delhivery, Ekart, and Amazon
+logistics networks, the company provides flexible courier options based on delivery speed, service
+coverage, and shipping cost. Our goal is to simplify logistics for businesses and online sellers by
+providing a centralized courier booking and shipment management solution. Through our
+multi-carrier logistics model, customers can choose the most suitable courier service for their
+shipments while benefiting from competitive shipping rates and reliable delivery operations.</p>
                                         <p>
-                                            With a strong focus on precision, safety, and timely delivery, Susovan offers end-to-end transportation and supply chain services tailored to meet the unique needs of every client. Our experienced team, modern infrastructure, and technology-driven approach ensure seamless operations, real-time visibility, and consistent performance.
+                                           Susovan Enterprise offers a wide range of logistics services including parcel booking,
+customer-to-customer courier (C2C), business-to-customer delivery (B2C), bulk B2B shipments,
+e-commerce shipping solutions, COD (Cash on Delivery) services, return pickup management, and
+transportation services such as part truck load (PTL) and full truck load (FTL).
                                         </p>
                                     </div>
                                 </div>
@@ -94,7 +108,109 @@ function About() {
             </div>
         </div>
     </div>
+{/* ===== Logistics Model Section ===== */}
+<div className="logistics-area section-padding">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-12 text-center">
+        <div className="section-title">
+          <p>Our Process</p>
+          <h2>Our Logistics Model</h2>
+        </div>
+      </div>
+    </div>
 
+    <div className="row mt-4">
+      <div className="col-md-4">
+        <div className="single-logistics-box text-center">
+          <div className="icon mb-3">
+            <img src="assets/img/icon/process/web-Photoroom.png" alt="" />
+          </div>
+          <h5>First Mile Pickup</h5>
+          <p>
+            Parcel collection from businesses, online sellers, and individual customers.
+          </p>
+        </div>
+      </div>
+
+      <div className="col-md-4">
+        <div className="single-logistics-box text-center">
+          <div className="icon mb-3">
+            <img src="assets/img/icon/process/call-center-Photoroom.png" alt="" />
+          </div>
+          <h5>Multi-Carrier Booking</h5>
+          <p>
+            Shipment routing through trusted courier partners to optimize delivery time and cost.
+          </p>
+        </div>
+      </div>
+
+      <div className="col-md-4">
+        <div className="single-logistics-box text-center">
+          <div className="icon mb-3">
+            <img src="assets/img/icon/process/package-Photoroom.png" alt="" />
+          </div>
+          <h5>Last Mile Delivery</h5>
+          <p>
+            Efficient delivery coordination through established courier networks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{/* ===== Why Choose Us ===== */}
+<div className="why-choose-area gray-bg section-padding">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-6">
+        <div className="section-title">
+          <p>Why Choose Us</p>
+          <h2>Why Choose Susovan Enterprise</h2>
+        </div>
+
+        <ul className="why-list mt-4">
+          <li>✔ Multi-courier shipping network</li>
+          <li>✔ Competitive courier rates</li>
+          <li>✔ Reliable parcel pickup services</li>
+          <li>✔ Logistics solutions for e-commerce sellers</li>
+          <li>✔ Bulk shipment support for businesses</li>
+          <li>✔ COD and return shipment management</li>
+          <li>✔ Professional courier coordination</li>
+        </ul>
+      </div>
+
+      <div className="col-lg-6">
+        <div className="about-img">
+          <img src="assets/img/about/2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{/* ===== Vision Section ===== */}
+<div className="vision-area section-padding text-center">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-8 offset-lg-2">
+        <div className="section-title">
+          <p>Our Goal</p>
+          <h2>Our Vision</h2>
+        </div>
+
+        <p className="mt-4">
+          Our vision is to build a reliable logistics ecosystem that connects businesses,
+          online sellers, and courier networks through a smart courier aggregation model,
+          enabling efficient shipping solutions across India.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
     {/*<!-- Feature Section  -->*/}
 
     <div className="feature-area dark-bg section-padding">
