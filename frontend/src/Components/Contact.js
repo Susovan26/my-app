@@ -15,8 +15,8 @@ const handleChange = (e) => {
 
 const handleSubmit = async (e) => {
     e.preventDefault();
-  const res = await fetch("http://localhost:5000/api/contact",{
-  //  const res = await fetch("api.susovanenterprise.com/contact", {
+  //const res = await fetch("http://localhost:5000/api/contact",{
+    const res = await fetch("api.susovanenterprise.com/contact", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
