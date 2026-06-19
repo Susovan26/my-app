@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 export default function NavBar() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -89,13 +89,17 @@ export default function NavBar() {
                       <ul className="navbar-nav m-auto">
                         {/* Home */}
                         <li className="nav-item">
-                          <a className="nav-link" href="/">Home</a>
-                        </li>
+    <Link className="nav-link" to="/">
+        Home
+    </Link>
+</li>
 
                         {/* About Us */}
                         <li className="nav-item">
-                          <a className="nav-link" href="/about">About Us</a>
-                        </li>
+    <Link className="nav-link" to="/about">
+        About Us
+    </Link>
+</li>
 
                         {/* Solution - raw design এর মত nested */}
                         <li className="nav-item dropdown">
@@ -118,33 +122,33 @@ export default function NavBar() {
                                 </button>
                                 <div className={`dropdown-content ${openFirstMile ? "show" : ""}`}>
                                   <ul>
-                                    <li><a href="/personal-courier">Personal Courier</a></li>
-                                    <li><a href="/business-courier">Business Courier</a></li>
-                                    <li><a href="/large-heavy-courier">Large & Heavy Courier</a></li>
-                                    <li><a href="/single-pakage">Single Pakage</a></li>
-                                    <li><a href="/multi-pakage">Multi Pakage</a></li>
-                                    <li><a href="/part-truck-load">Part Truck Load</a></li>
-                                    <li><a href="/full-truck-load">Full Truck Load</a></li>
-                                    <li><a href="/house-hold">House Hold</a></li>
+                                    <li><Link to="/personal-courier">Personal Courier</Link></li>
+                                    <li><Link to="/business-courier">Business Courier</Link></li>
+                                    <li><Link to="/large-heavy-courier">Large & Heavy Courier</Link></li>
+                                    <li><Link to="/single-pakage">Single Pakage</Link></li>
+                                    <li><Link to="/multi-pakage">Multi Pakage</Link></li>
+                                    <li><Link to="/part-truck-load">Part Truck Load</Link></li>
+                                    <li><Link to="/full-truck-load">Full Truck Load</Link></li>
+                                    <li><Link to="/house-hold">House Hold</Link></li>
                                   </ul>
                                 </div>
                               </div>
                             </li>
-                            <li><a href="/last-mile-delivery">Last Mile Delivery</a></li>
+                            <li><Link to="/last-mile-delivery">Last Mile Delivery</Link></li>
                           </ul>
                         </li>
 
                         <li className="nav-item">
-                          <a className="nav-link" href="/rate-calculator">Rate Calculator</a>
+                          <Link className="nav-link" to="/rate-calculator">Rate Calculator</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="/track">Track</a>
+                          <Link className="nav-link" to="/track">Track</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="/media">Media</a>
+                          <Link className="nav-link" to="/media">Media</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="/careers">Careers</a>
+                          <Link className="nav-link" to="/careers">Careers</Link>
                         </li>
 
                         {/* Ship Now */}
@@ -161,13 +165,13 @@ export default function NavBar() {
                             <span className="sub-nav-toggler"></span>
                           </a>
                           <ul className={`sub-menu ${openDropdown === 2 ? "show" : ""}`}>
-                            <li><a href="/private">Private Person</a></li>
-                            <li><a href="/business">Business</a></li>
+                            <li><Link to="/private">Private Person</Link></li>
+                            <li><Link to="/business">Business</Link></li>
                           </ul>
                         </li>
 
                         <li className="nav-item">
-                          <a className="nav-link" href="/contact">Contact Us</a>
+                          <Link className="nav-link" to="/contact">Contact Us</Link>
                         </li>
 
                         {/* Login */}
@@ -184,9 +188,9 @@ export default function NavBar() {
                             <span className="sub-nav-toggler"></span>
                           </a>
                           <ul className={`sub-menu ${openDropdown === 3 ? "show" : ""}`}>
-                            <li><a href="/personal-login">Personal</a></li>
-                            <li><a href="/business-login">Business</a></li>
-                            <li><a href="/franchise-login">Franchise</a></li>
+                            <li><Link to="/personal-login">Personal</Link></li>
+                            <li><Link to="/business-login">Business</Link></li>
+                            <li><Link to="/franchise-login">Franchise</Link></li>
                           </ul>
                         </li>
                       </ul>
